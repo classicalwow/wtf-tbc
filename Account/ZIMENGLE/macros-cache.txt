@@ -1,0 +1,6 @@
+MACRO 1 "reload" INV_Misc_QuestionMark
+/script ReloadUI()
+END
+MACRO 2 "test" Ability_BackStab
+x
+END

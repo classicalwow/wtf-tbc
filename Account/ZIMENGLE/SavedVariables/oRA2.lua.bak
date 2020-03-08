@@ -1,0 +1,49 @@
+
+oRADB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
+	["namespaces"] = {
+		["选择/冷却"] = {
+			["realms"] = {
+				["Stormspire - 联盟"] = {
+					["cooldowns"] = {
+					},
+				},
+			},
+		},
+	},
+	["disabledModules"] = {
+		["Default"] = {
+			["成员/团队警报"] = true,
+			["团长/抗性"] = true,
+			["团长/耐久度"] = true,
+			["领袖/延迟"] = true,
+			["团长/MT"] = true,
+			["成员/MT 目标"] = true,
+			["选择/队伍"] = true,
+			["选择/MT 目标"] = true,
+			["Options Menu"] = true,
+			["团长/就位"] = true,
+			["成员/就位"] = true,
+			["团长/团队警报"] = true,
+			["选择/冷却"] = true,
+			["成员/物品"] = true,
+			["选择/玩家目标"] = true,
+			["团长/物品"] = true,
+			["选项/区域"] = true,
+			["Participant"] = true,
+			["选择/复活监视"] = true,
+			["选项/版本"] = true,
+			["团长/拾取"] = true,
+		},
+	},
+}
+oRAFubarDB = {
+	["profiles"] = {
+		["Default"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

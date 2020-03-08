@@ -1,0 +1,2 @@
+
+TalentedCharDB = nil

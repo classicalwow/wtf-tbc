@@ -1,0 +1,16 @@
+
+MyBankProfile = {
+	["Typescript|Stormspire"] = {
+		["BagView"] = 1,
+		["HighlightItems"] = 1,
+		["Scale"] = 1,
+		["ReplaceBank"] = 1,
+		["money"] = 0,
+		["HighlightBags"] = 1,
+		["Graphics"] = 1,
+		["ShowPlayers"] = 1,
+		["Background"] = 1,
+		["Columns"] = 12,
+		["Freeze"] = 0,
+	},
+}

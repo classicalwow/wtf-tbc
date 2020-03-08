@@ -1,0 +1,117 @@
+
+ElvDB = {
+	["profileKeys"] = {
+		["Typescripts - Stormspire"] = "Typescripts - Stormspire",
+	},
+	["gold"] = {
+		["Stormspire"] = {
+			["Typescripts"] = 11772426,
+		},
+	},
+	["class"] = {
+		["Stormspire"] = {
+			["Typescripts"] = "WARRIOR",
+		},
+	},
+	["global"] = {
+		["uiScale"] = "0.6599999666214",
+		["classCache"] = {
+			["Stormspire"] = {
+				["Typescripts"] = "WARRIOR",
+			},
+		},
+		["nameplates"] = {
+			["filters"] = {
+				["Boss"] = {
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["Typescripts - Stormspire"] = {
+			["general"] = {
+				["valuecolor"] = {
+					["b"] = 0.43,
+					["g"] = 0.61,
+					["r"] = 0.78,
+				},
+			},
+			["chat"] = {
+				["panelColorConverted"] = true,
+			},
+			["layoutSet"] = "dpsMelee",
+			["CBO"] = {
+				["player"] = {
+					["overlay"] = false,
+				},
+			},
+			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
+				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1196",
+				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
+				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
+				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
+			},
+			["unitframe"] = {
+				["units"] = {
+					["pet"] = {
+						["castbar"] = {
+							["width"] = 128.8889770507813,
+							["height"] = 6.111111164093018,
+						},
+					},
+					["target"] = {
+						["castbar"] = {
+							["width"] = 268.8888854980469,
+							["height"] = 8.888889312744141,
+						},
+					},
+					["focus"] = {
+						["castbar"] = {
+							["width"] = 188.8888397216797,
+							["height"] = 6.111111164093018,
+						},
+					},
+					["player"] = {
+						["castbar"] = {
+							["width"] = 411.1111111111111,
+						},
+					},
+				},
+				["colors"] = {
+					["auraBarBuff"] = {
+						["b"] = 0.43,
+						["g"] = 0.61,
+						["r"] = 0.78,
+					},
+					["healthclass"] = true,
+					["castClassColor"] = true,
+				},
+			},
+			["datatexts"] = {
+				["panels"] = {
+					["LeftChatDataPanel"] = {
+						["right"] = "Haste",
+						["left"] = "Attack Power",
+					},
+				},
+			},
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["Typescripts - Stormspire"] = "Typescripts - Stormspire",
+	},
+	["profiles"] = {
+		["Typescripts - Stormspire"] = {
+			["theme"] = "class",
+			["install_complete"] = "1.49",
+			["CBO"] = {
+				["warned"] = true,
+			},
+		},
+	},
+}
+GAME_LOCALE = nil

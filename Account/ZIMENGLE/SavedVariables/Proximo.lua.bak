@@ -1,0 +1,10 @@
+
+ProximoDB = {
+	["profileKeys"] = {
+		["Typescript - Stormspire"] = "Typescript - Stormspire",
+	},
+	["profiles"] = {
+		["Typescript - Stormspire"] = {
+		},
+	},
+}

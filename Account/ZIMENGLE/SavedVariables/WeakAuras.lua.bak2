@@ -1,0 +1,727 @@
+
+WeakAurasSaved = {
+	["dynamicIconCache"] = {
+	},
+	["login_squelch_time"] = 10,
+	["talent_cache"] = {
+		["DEATHKNIGHT"] = {
+		},
+		["WARRIOR"] = {
+			[2.2] = {
+				["name"] = "强化狂暴姿态",
+				["icon"] = "Interface\\Icons\\Ability_Racial_Avatar",
+			},
+			[2.16] = {
+				["name"] = "乱舞",
+				["icon"] = "Interface\\Icons\\Ability_GhoulFrenzy",
+			},
+			[1.04] = {
+				["name"] = "强化冲锋",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Charge",
+			},
+			[3.06] = {
+				["name"] = "破釜沉舟",
+				["icon"] = "Interface\\Icons\\Spell_Holy_AshesToAshes",
+			},
+			[2.14] = {
+				["name"] = "武器掌握",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_WeaponMastery",
+			},
+			[2.12] = {
+				["name"] = "强化猛击",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_DecisiveStrike",
+			},
+			[2.08] = {
+				["name"] = "统御之力",
+				["icon"] = "Interface\\Icons\\Spell_Nature_FocusedMind",
+			},
+			[3.19] = {
+				["name"] = "盾牌猛击",
+				["icon"] = "Interface\\Icons\\INV_Shield_05",
+			},
+			[2.06] = {
+				["name"] = "刺耳怒吼",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathScream",
+			},
+			[1.21] = {
+				["name"] = "复苏之风",
+				["icon"] = "Interface\\Icons\\Ability_Hunter_Harass",
+			},
+			[3.15] = {
+				["name"] = "强化盾击",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_ShieldBash",
+			},
+			[3.07] = {
+				["name"] = "强化盾牌格挡",
+				["icon"] = "Interface\\Icons\\Ability_Defend",
+			},
+			[2.04] = {
+				["name"] = "怒不可遏",
+				["icon"] = "Interface\\Icons\\Spell_Nature_StoneClawTotem",
+			},
+			[1.19] = {
+				["name"] = "血性狂乱",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_BloodFrenzy",
+			},
+			[3.03] = {
+				["name"] = "预知",
+				["icon"] = "Interface\\Icons\\Spell_Nature_MirrorImage",
+			},
+			[3.2] = {
+				["name"] = "怒火专注",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_FocusedRage",
+			},
+			[1.13] = {
+				["name"] = "死亡之愿",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_DeathPact",
+			},
+			[3.16] = {
+				["name"] = "盾牌掌握",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_ShieldMastery",
+			},
+			[1.11] = {
+				["name"] = "穿刺",
+				["icon"] = "Interface\\Icons\\Ability_SearingArrow",
+			},
+			[1.07] = {
+				["name"] = "强化压制",
+				["icon"] = "Interface\\Icons\\INV_Sword_05",
+			},
+			[3.12] = {
+				["name"] = "强化嘲讽",
+				["icon"] = "Interface\\Icons\\Spell_Nature_Reincarnation",
+			},
+			[2.21] = {
+				["name"] = "暴怒",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Rampage",
+			},
+			[1.05] = {
+				["name"] = "钢铁意志",
+				["icon"] = "Interface\\Icons\\Spell_Magic_MageArmor",
+			},
+			[3.08] = {
+				["name"] = "强化复仇",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Revenge",
+			},
+			[2.19] = {
+				["name"] = "强化旋风斩",
+				["icon"] = "Interface\\Icons\\Ability_Whirlwind",
+			},
+			[2.15] = {
+				["name"] = "强化狂暴之怒",
+				["icon"] = "Interface\\Icons\\Spell_Nature_AncestralGuardian",
+			},
+			[1.03] = {
+				["name"] = "强化撕裂",
+				["icon"] = "Interface\\Icons\\Ability_Gouge",
+			},
+			[2.13] = {
+				["name"] = "横扫攻击",
+				["icon"] = "Interface\\Icons\\Ability_Rogue_SliceDice",
+			},
+			[3.21] = {
+				["name"] = "活力",
+				["icon"] = "Interface\\Icons\\INV_Helmet_21",
+			},
+			[2.11] = {
+				["name"] = "激怒",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyFrenzy",
+			},
+			[2.07] = {
+				["name"] = "血之狂热",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_SummonImp",
+			},
+			[1.18] = {
+				["name"] = "强化戒律",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_ImprovedDisciplines",
+			},
+			[3.17] = {
+				["name"] = "单手武器专精",
+				["icon"] = "Interface\\Icons\\INV_Sword_20",
+			},
+			[2.05] = {
+				["name"] = "强化顺劈斩",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Cleave",
+			},
+			[1.2] = {
+				["name"] = "致死打击",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
+			},
+			[1.16] = {
+				["name"] = "强化拦截",
+				["icon"] = "Interface\\Icons\\Ability_Rogue_Sprint",
+			},
+			[1.09] = {
+				["name"] = "重伤",
+				["icon"] = "Interface\\Icons\\Ability_BackStab",
+			},
+			[3.1] = {
+				["name"] = "强化破甲攻击",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Sunder",
+			},
+			[3.13] = {
+				["name"] = "强化盾墙",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_ShieldWall",
+			},
+			[3.05] = {
+				["name"] = "坚韧",
+				["icon"] = "Interface\\Icons\\Spell_Holy_Devotion",
+			},
+			[2.03] = {
+				["name"] = "强化挫志怒吼",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
+			},
+			[2.1] = {
+				["name"] = "强化斩杀",
+				["icon"] = "Interface\\Icons\\INV_Sword_48",
+			},
+			[1.14] = {
+				["name"] = "锤类武器专精",
+				["icon"] = "Interface\\Icons\\INV_Mace_01",
+			},
+			[3.01] = {
+				["name"] = "强化血性狂暴",
+				["icon"] = "Interface\\Icons\\Ability_Racial_BloodRage",
+			},
+			[1.06] = {
+				["name"] = "强化雷霆一击",
+				["icon"] = "Interface\\Icons\\Ability_ThunderClap",
+			},
+			[2.17] = {
+				["name"] = "精确",
+				["icon"] = "Interface\\Icons\\Ability_Marksmanship",
+			},
+			[2.01] = {
+				["name"] = "震耳嗓音",
+				["icon"] = "Interface\\Icons\\Spell_Nature_Purge",
+			},
+			[3.18] = {
+				["name"] = "强化防御姿态",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_DefensiveStance",
+			},
+			[1.1] = {
+				["name"] = "双手武器专精",
+				["icon"] = "Interface\\Icons\\INV_Axe_09",
+			},
+			[1.23] = {
+				["name"] = "无尽怒气",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_EndlessRage",
+			},
+			[3.04] = {
+				["name"] = "盾牌专精",
+				["icon"] = "Interface\\Icons\\INV_Shield_06",
+			},
+			[1.12] = {
+				["name"] = "长柄专精",
+				["icon"] = "Interface\\Icons\\INV_Axe_06",
+			},
+			[1.08] = {
+				["name"] = "愤怒掌控",
+				["icon"] = "Interface\\Icons\\Spell_Holy_BlessingOfStamina",
+			},
+			[3.11] = {
+				["name"] = "强化缴械",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_Disarm",
+			},
+			[2.02] = {
+				["name"] = "残忍",
+				["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
+			},
+			[1.15] = {
+				["name"] = "剑类武器专精",
+				["icon"] = "Interface\\Icons\\INV_Sword_27",
+			},
+			[3.22] = {
+				["name"] = "毁灭打击",
+				["icon"] = "Interface\\Icons\\INV_Sword_11",
+			},
+			[3.14] = {
+				["name"] = "震荡猛击",
+				["icon"] = "Interface\\Icons\\Ability_ThunderBolt",
+			},
+			[2.18] = {
+				["name"] = "嗜血",
+				["icon"] = "Interface\\Icons\\Spell_Nature_BloodLust",
+			},
+			[2.09] = {
+				["name"] = "双武器专精",
+				["icon"] = "Interface\\Icons\\Ability_DualWield",
+			},
+			[1.02] = {
+				["name"] = "偏斜",
+				["icon"] = "Interface\\Icons\\Ability_Parry",
+			},
+			[1.22] = {
+				["name"] = "强化致死打击",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
+			},
+			[3.09] = {
+				["name"] = "挑衅",
+				["icon"] = "Interface\\Icons\\Ability_Warrior_InnerRage",
+			},
+			[1.01] = {
+				["name"] = "强化英勇打击",
+				["icon"] = "Interface\\Icons\\Ability_Rogue_Ambush",
+			},
+			[3.02] = {
+				["name"] = "战术掌握",
+				["icon"] = "Interface\\Icons\\Spell_Nature_EnchantArmor",
+			},
+			[1.17] = {
+				["name"] = "强化断筋",
+				["icon"] = "Interface\\Icons\\Ability_ShockWave",
+			},
+		},
+		["ROGUE"] = {
+		},
+		["MAGE"] = {
+		},
+		["PRIEST"] = {
+		},
+		["WARLOCK"] = {
+		},
+		["HUNTER"] = {
+		},
+		["DRUID"] = {
+		},
+		["SHAMAN"] = {
+		},
+		["PALADIN"] = {
+		},
+	},
+	["displays"] = {
+		["战斗怒吼"] = {
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["untrigger"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["anchorPoint"] = "CENTER",
+			["yOffset"] = 56.66668701171875,
+			["regionType"] = "icon",
+			["xOffset"] = 0.5556640625,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["numTriggers"] = 1,
+			["customTextUpdate"] = "update",
+			["trigger"] = {
+				["type"] = "aura",
+				["subeventSuffix"] = "_CAST_START",
+				["ownOnly"] = true,
+				["event"] = "Cooldown Progress (Spell)",
+				["unit"] = "player",
+				["spellName"] = 0,
+				["use_spellName"] = true,
+				["inverse"] = true,
+				["use_unit"] = true,
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"战斗怒吼", -- [1]
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["selfPoint"] = "CENTER",
+			["id"] = "战斗怒吼",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["stickyDuration"] = false,
+			["width"] = 35.11120223999023,
+			["font"] = "Friz Quadrata TT",
+			["inverse"] = false,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["height"] = 35.66658020019531,
+			["displayIcon"] = "Interface\\Icons\\Ability_Warrior_BattleShout",
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["致死"] = {
+			["xOffset"] = 43.3331298828125,
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["yOffset"] = -81.66650390625,
+			["regionType"] = "icon",
+			["untrigger"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["inverse"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["customTextUpdate"] = "update",
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Cooldown Progress (Spell)",
+				["unit"] = "player",
+				["debuffType"] = "HELPFUL",
+				["use_spellName"] = true,
+				["names"] = {
+				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["use_targetRequired"] = true,
+				["spellName"] = 0,
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["selfPoint"] = "CENTER",
+			["id"] = "致死",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["stickyDuration"] = false,
+			["width"] = 42.88901901245117,
+			["font"] = "Friz Quadrata TT",
+			["numTriggers"] = 1,
+			["icon"] = true,
+			["height"] = 44.55553436279297,
+			["displayIcon"] = "Interface\\Icons\\Ability_Warrior_SavageBlow",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["压制"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["xOffset"] = -73.88885498046875,
+			["untrigger"] = {
+				["spellName"] = 11585,
+			},
+			["anchorPoint"] = "CENTER",
+			["yOffset"] = -95.55548095703125,
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["numTriggers"] = 2,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["customTextUpdate"] = "update",
+			["stickyDuration"] = false,
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["selfPoint"] = "CENTER",
+			["id"] = "压制",
+			["desaturate"] = false,
+			["frameStrata"] = 1,
+			["width"] = 40.66666412353516,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "event",
+						["unevent"] = "timed",
+						["duration"] = "5",
+						["event"] = "Cooldown Ready (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_spellName"] = true,
+						["spellName"] = 11585,
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["unit"] = "player",
+						["names"] = {
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+						["spellName"] = 11585,
+					},
+				}, -- [1]
+			},
+			["font"] = "Friz Quadrata TT",
+			["inverse"] = false,
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Action Usable",
+				["unit"] = "player",
+				["spellName"] = 11585,
+				["use_spellName"] = true,
+				["use_targetRequired"] = true,
+				["use_unit"] = true,
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["height"] = 45.11102294921875,
+			["displayIcon"] = "Interface\\Icons\\Ability_MeleeDamage",
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["旋风斩"] = {
+			["xOffset"] = 53.333251953125,
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["untrigger"] = {
+				["spellName"] = 1680,
+			},
+			["anchorPoint"] = "CENTER",
+			["yOffset"] = -86.66650390625,
+			["regionType"] = "icon",
+			["trigger"] = {
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Action Usable",
+				["unit"] = "player",
+				["spellName"] = 1680,
+				["use_spellName"] = true,
+				["use_targetRequired"] = false,
+				["use_unit"] = true,
+				["unevent"] = "auto",
+				["subeventPrefix"] = "SPELL",
+				["names"] = {
+				},
+				["debuffType"] = "HELPFUL",
+			},
+			["numTriggers"] = 2,
+			["selfPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["id"] = "旋风斩",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["fontFlags"] = "OUTLINE",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["itemName"] = 0,
+						["unevent"] = "timed",
+						["duration"] = "10",
+						["event"] = "Cooldown Ready (Spell)",
+						["subeventPrefix"] = "SPELL",
+						["use_spellName"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "event",
+						["use_itemName"] = true,
+						["spellName"] = 1680,
+					},
+					["untrigger"] = {
+						["spellName"] = 1680,
+					},
+				}, -- [1]
+			},
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 40.66673278808594,
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["inverse"] = false,
+			["icon"] = true,
+			["height"] = 42.33328247070313,
+			["displayIcon"] = "Interface\\Icons\\Ability_Whirlwind",
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+	},
+	["frame"] = {
+		["xOffset"] = -232.780029296875,
+		["width"] = 630,
+		["height"] = 492,
+		["yOffset"] = -548.4437255859375,
+	},
+	["tempIconCache"] = {
+		["战斗怒吼"] = "Interface\\Icons\\Ability_Warrior_BattleShout",
+	},
+	["registered"] = {
+	},
+}

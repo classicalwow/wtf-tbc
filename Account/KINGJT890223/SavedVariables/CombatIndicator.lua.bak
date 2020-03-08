@@ -1,0 +1,7 @@
+
+CombatIndicator_Config = {
+	["ShowComboPoint"] = true,
+	["EnableCombatIndicator"] = 1,
+	["LeaveCombat_Alert"] = true,
+	["ShowSpell"] = true,
+}

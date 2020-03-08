@@ -1,0 +1,46 @@
+
+IceCoreDB = {
+	["account"] = {
+		["modules"] = {
+			["TargetInfo"] = {
+				["myTagVersion"] = 3,
+			},
+			["TargetCast"] = {
+				["myTagVersion"] = 3,
+			},
+			["PetHealth"] = {
+				["myTagVersion"] = 3,
+			},
+			["PlayerHealth"] = {
+				["myTagVersion"] = 3,
+			},
+			["CastBar"] = {
+				["myTagVersion"] = 3,
+			},
+			["TargetHealth"] = {
+				["myTagVersion"] = 3,
+			},
+			["PlayerMana"] = {
+				["myTagVersion"] = 3,
+			},
+			["PetMana"] = {
+				["myTagVersion"] = 3,
+			},
+			["TargetMana"] = {
+				["myTagVersion"] = 3,
+			},
+		},
+		["colors"] = {
+			["ScaledManaColor"] = {
+				["b"] = nil --[[ nan ]],
+				["g"] = nil --[[ nan ]],
+				["r"] = nil --[[ nan ]],
+			},
+			["ScaledHealthColor"] = {
+				["b"] = nil --[[ nan ]],
+				["g"] = nil --[[ nan ]],
+				["r"] = nil --[[ nan ]],
+			},
+		},
+	},
+}
