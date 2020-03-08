@@ -246,11 +246,11 @@ InFlightCartoDB = {
 			[51211870] = "Taxi",
 			[72451526] = "Taxi",
 		},
-		["Western Plaguelands"] = {
-			[84912780] = "Taxi",
-		},
 		["Burning Steppes"] = {
 			[68315270] = "Taxi",
+		},
+		["Western Plaguelands"] = {
+			[84912780] = "Taxi",
 		},
 		["Darkshore"] = {
 			[45608200] = "Taxi",

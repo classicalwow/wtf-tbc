@@ -29,14 +29,14 @@ CartographerDB = {
 			},
 			["profiles"] = {
 				["Default"] = {
-					["commActive"] = true,
-					["showCreator"] = true,
 					["showMinimapIcons"] = true,
+					["showCreator"] = true,
+					["commActive"] = true,
 					["showYardsAway"] = true,
 					["iconSize"] = 1,
-					["minimapIconSize"] = 0.65,
-					["notesPerDB"] = 25,
 					["commFilter"] = "handmade",
+					["notesPerDB"] = 25,
+					["minimapIconSize"] = 0.65,
 				},
 				["Alternate"] = {
 					["showNotifications"] = true,

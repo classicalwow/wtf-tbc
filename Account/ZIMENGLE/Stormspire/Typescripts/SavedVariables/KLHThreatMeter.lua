@@ -3,7 +3,6 @@ klhtmsavedvariables = {
 	["validation"] = {
 		["enabled"] = true,
 	},
-	["_version"] = 264,
 	["raidtable"] = {
 		{
 			["scale"] = 1,
@@ -172,4 +171,5 @@ klhtmsavedvariables = {
 	["garbage"] = {
 		["enabled"] = true,
 	},
+	["_version"] = 264,
 }

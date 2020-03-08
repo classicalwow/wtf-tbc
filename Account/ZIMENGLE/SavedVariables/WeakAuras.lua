@@ -74,6 +74,8 @@ WeakAurasSaved = {
 			},
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "ElvUI_Bar1Button1",
 				},
 				["finish"] = {
 				},
@@ -176,6 +178,9 @@ WeakAurasSaved = {
 			},
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["do_custom"] = false,
+					["glow_frame"] = "ElvUI_Bar1Button4",
 				},
 				["finish"] = {
 				},
@@ -216,73 +221,32 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["单体输出技能"] = {
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["controlledChildren"] = {
-				"战斗姿态", -- [1]
-				"狂暴姿态", -- [2]
-				"泄怒", -- [3]
-				"英勇打击", -- [4]
-				"旋风斩", -- [5]
-				"致死打击", -- [6]
-				"压制", -- [7]
-				"斩杀", -- [8]
-				"战斗怒吼", -- [9]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = -7.7779541015625,
-			["border"] = false,
-			["yOffset"] = 155.5554809570313,
+		["拳击"] = {
+			["xOffset"] = 7.777587890625,
+			["yOffset"] = -77.22235107421875,
 			["anchorPoint"] = "CENTER",
-			["borderSize"] = 16,
-			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["borderOffset"] = 5,
-			["selfPoint"] = "BOTTOMLEFT",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
 			["trigger"] = {
-				["unit"] = "player",
-				["type"] = "aura",
-				["debuffType"] = "HELPFUL",
+				["use_castType"] = false,
+				["type"] = "status",
+				["subeventSuffix"] = "_CAST_START",
+				["event"] = "Cast",
+				["unit"] = "target",
+				["use_interruptible"] = true,
 				["names"] = {
 				},
+				["subeventPrefix"] = "SPELL",
+				["unevent"] = "auto",
+				["use_unit"] = true,
+				["use_spell"] = false,
+				["debuffType"] = "HELPFUL",
 			},
-			["frameStrata"] = 1,
-			["regionType"] = "group",
-			["untrigger"] = {
-			},
-			["borderInset"] = 11,
-			["numTriggers"] = 1,
-			["id"] = "单体输出技能",
-			["borderEdge"] = "None",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 49.0001335144043,
 			["load"] = {
 				["class"] = {
 					["multi"] = {
@@ -301,7 +265,94 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["expanded"] = true,
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "单体输出技能",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["id"] = "拳击",
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["form"] = 3,
+						["event"] = "Stance/Form/Aura",
+						["subeventPrefix"] = "SPELL",
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["use_form"] = true,
+					},
+					["untrigger"] = {
+						["form"] = 3,
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["event"] = "Action Usable",
+						["subeventPrefix"] = "SPELL",
+						["use_spellName"] = true,
+						["unit"] = "player",
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
+						["spellName"] = "拳击",
+					},
+					["untrigger"] = {
+						["spellName"] = "拳击",
+					},
+				}, -- [2]
+			},
+			["stickyDuration"] = false,
+			["frameStrata"] = 1,
+			["width"] = 47.88900756835938,
+			["numTriggers"] = 3,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["inverse"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = true,
+					["do_custom"] = false,
+					["do_message"] = false,
+					["glow_frame"] = "ElvUI_Bar1Button8",
+				},
+				["finish"] = {
+				},
+			},
+			["untrigger"] = {
+				["unit"] = "target",
+			},
+			["displayIcon"] = "Interface\\Icons\\INV_Gauntlets_04",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["提示"] = {
 			["backdropColor"] = {
@@ -431,6 +482,15 @@ WeakAurasSaved = {
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
 			["parent"] = "单体输出技能",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -451,15 +511,6 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["id"] = "战斗姿态",
 			["untrigger"] = {
 				["form"] = 1,
@@ -468,10 +519,15 @@ WeakAurasSaved = {
 			["width"] = 47.3333625793457,
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["do_custom"] = false,
+					["glow_frame"] = "ElvUI_StanceBarButton1",
 				},
 				["finish"] = {
 				},
 			},
+			["inverse"] = false,
+			["numTriggers"] = 2,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -486,8 +542,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["inverse"] = false,
-			["numTriggers"] = 2,
 			["stickyDuration"] = false,
 			["displayIcon"] = "Interface\\Icons\\Ability_Warrior_OffensiveStance",
 			["stacksPoint"] = "BOTTOMRIGHT",
@@ -511,6 +565,8 @@ WeakAurasSaved = {
 			["customTextUpdate"] = "update",
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "ElvUI_Bar2Button1",
 				},
 				["finish"] = {
 				},
@@ -567,6 +623,11 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
+			["xOffset"] = 8.888671875,
+			["parent"] = "单体输出技能",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -586,11 +647,6 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["xOffset"] = 8.888671875,
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = false,
-			["parent"] = "单体输出技能",
 			["id"] = "战斗怒吼",
 			["yOffset"] = -77.22216796875,
 			["frameStrata"] = 1,
@@ -609,46 +665,48 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
-		["狂暴姿态"] = {
-			["xOffset"] = 8.888671875,
-			["yOffset"] = -79.4443359375,
+		["压制提醒"] = {
+			["xOffset"] = -164.4441528320313,
+			["untrigger"] = {
+				["spellName"] = "压制",
+			},
 			["anchorPoint"] = "CENTER",
 			["customTextUpdate"] = "update",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["fontFlags"] = "OUTLINE",
 			["selfPoint"] = "CENTER",
 			["trigger"] = {
 				["type"] = "status",
-				["use_health"] = false,
-				["unevent"] = "auto",
-				["percentpower"] = "20",
-				["percentpower_operator"] = "<=",
-				["event"] = "Power",
-				["subeventPrefix"] = "SPELL",
 				["subeventSuffix"] = "_CAST_START",
-				["powertype"] = 1,
-				["use_percentpower"] = true,
+				["event"] = "Action Usable",
+				["subeventPrefix"] = "SPELL",
+				["use_spellName"] = true,
+				["spellName"] = "压制",
+				["use_unit"] = true,
+				["unevent"] = "auto",
+				["unit"] = "player",
 				["names"] = {
 				},
-				["unit"] = "player",
-				["use_unit"] = true,
-				["use_powertype"] = true,
 				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
 			["font"] = "Friz Quadrata TT",
-			["height"] = 45.11110305786133,
+			["height"] = 49.00001525878906,
 			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
 				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -660,69 +718,58 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["displayStacks"] = "%s",
 			["regionType"] = "icon",
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["unevent"] = "auto",
-						["custom_hide"] = "timed",
-						["form"] = 3,
-						["event"] = "Stance/Form/Aura",
-						["subeventPrefix"] = "SPELL",
-						["use_inverse"] = true,
-						["use_form"] = true,
-						["unit"] = "player",
-						["names"] = {
-						},
-						["use_unit"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-						["form"] = 3,
-					},
-				}, -- [1]
-			},
-			["parent"] = "单体输出技能",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = false,
+			["parent"] = "提示",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "狂暴姿态",
-			["untrigger"] = {
-				["unit"] = "player",
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["form"] = 1,
+						["event"] = "Stance/Form/Aura",
+						["subeventPrefix"] = "SPELL",
+						["use_inverse"] = true,
+						["use_form"] = true,
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+					},
+					["untrigger"] = {
+						["form"] = 1,
+					},
+				}, -- [1]
 			},
+			["id"] = "压制提醒",
+			["yOffset"] = -64.99993896484375,
 			["frameStrata"] = 1,
-			["width"] = 47.33336639404297,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
+			["width"] = 47.88899612426758,
+			["icon"] = true,
 			["inverse"] = false,
 			["numTriggers"] = 2,
 			["stickyDuration"] = false,
-			["displayIcon"] = "Interface\\Icons\\Ability_Racial_Avatar",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["displayIcon"] = "Interface\\Icons\\INV_Sword_05",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -745,9 +792,9 @@ WeakAurasSaved = {
 				["form"] = 1,
 				["event"] = "Stance/Form/Aura",
 				["unit"] = "player",
-				["use_form"] = true,
-				["use_spellName"] = true,
 				["spellName"] = 0,
+				["use_spellName"] = true,
+				["use_form"] = true,
 				["use_unit"] = true,
 				["unevent"] = "auto",
 				["subeventPrefix"] = "SPELL",
@@ -781,15 +828,24 @@ WeakAurasSaved = {
 			["displayStacks"] = "泄怒",
 			["regionType"] = "icon",
 			["parent"] = "单体输出技能",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
 						["type"] = "status",
 						["unevent"] = "auto",
 						["custom_hide"] = "timed",
-						["percentpower"] = "20",
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
+						["percentpower"] = "20",
 						["powertype"] = 1,
 						["unit"] = "player",
 						["use_percentpower"] = true,
@@ -802,15 +858,6 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["id"] = "泄怒",
 			["untrigger"] = {
 				["form"] = 1,
@@ -819,10 +866,14 @@ WeakAurasSaved = {
 			["width"] = 42.33341979980469,
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "ElvUI_Bar1Button2",
 				},
 				["finish"] = {
 				},
 			},
+			["inverse"] = false,
+			["numTriggers"] = 2,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -837,8 +888,6 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["inverse"] = false,
-			["numTriggers"] = 2,
 			["stickyDuration"] = false,
 			["displayIcon"] = "Interface\\Icons\\Ability_Rogue_Ambush",
 			["stacksPoint"] = "BOTTOMRIGHT",
@@ -925,6 +974,11 @@ WeakAurasSaved = {
 			},
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["do_sound"] = true,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\hyena.ogg",
+					["do_message"] = false,
+					["glow_frame"] = "ElvUI_Bar1Button4",
 				},
 				["finish"] = {
 				},
@@ -957,138 +1011,6 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["displayIcon"] = "Interface\\Icons\\Ability_Whirlwind",
-			["stacksPoint"] = "BOTTOMRIGHT",
-			["textColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["压制提醒"] = {
-			["xOffset"] = -164.4441528320313,
-			["untrigger"] = {
-				["spellName"] = "压制",
-			},
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["fontFlags"] = "OUTLINE",
-			["selfPoint"] = "CENTER",
-			["trigger"] = {
-				["type"] = "status",
-				["subeventSuffix"] = "_CAST_START",
-				["event"] = "Action Usable",
-				["subeventPrefix"] = "SPELL",
-				["use_spellName"] = true,
-				["spellName"] = "压制",
-				["use_unit"] = true,
-				["unevent"] = "auto",
-				["unit"] = "player",
-				["names"] = {
-				},
-				["debuffType"] = "HELPFUL",
-			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["height"] = 49.00001525878906,
-			["load"] = {
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 12,
-			["displayStacks"] = "%s",
-			["regionType"] = "icon",
-			["additional_triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["unevent"] = "auto",
-						["form"] = 1,
-						["event"] = "Stance/Form/Aura",
-						["subeventPrefix"] = "SPELL",
-						["use_inverse"] = true,
-						["use_form"] = true,
-						["use_unit"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
-					},
-					["untrigger"] = {
-						["form"] = 1,
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "status",
-						["use_health"] = false,
-						["unevent"] = "auto",
-						["percentpower"] = "20",
-						["event"] = "Power",
-						["subeventPrefix"] = "SPELL",
-						["powertype"] = 1,
-						["unit"] = "player",
-						["use_percentpower"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["use_powertype"] = true,
-						["percentpower_operator"] = "<=",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-			},
-			["parent"] = "提示",
-			["stacksContainment"] = "INSIDE",
-			["zoom"] = 0,
-			["auto"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["id"] = "压制提醒",
-			["yOffset"] = -64.99993896484375,
-			["frameStrata"] = 1,
-			["width"] = 47.88899612426758,
-			["icon"] = true,
-			["inverse"] = false,
-			["numTriggers"] = 3,
-			["stickyDuration"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["displayIcon"] = "Interface\\Icons\\INV_Sword_05",
 			["stacksPoint"] = "BOTTOMRIGHT",
 			["textColor"] = {
 				1, -- [1]
@@ -1188,6 +1110,8 @@ WeakAurasSaved = {
 			["inverse"] = false,
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "ElvUI_Bar1Button2",
 				},
 				["finish"] = {
 				},
@@ -1240,17 +1164,19 @@ WeakAurasSaved = {
 				["spellName"] = "斩杀",
 			},
 			["anchorPoint"] = "CENTER",
-			["icon"] = true,
-			["inverse"] = false,
-			["selfPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["width"] = 47.33342361450195,
 			["actions"] = {
 				["start"] = {
+					["do_glow"] = true,
+					["glow_frame"] = "ElvUI_Bar1Button7",
 				},
 				["finish"] = {
 				},
 			},
+			["inverse"] = false,
+			["selfPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["stickyDuration"] = false,
+			["icon"] = true,
 			["fontFlags"] = "OUTLINE",
 			["stacksContainment"] = "INSIDE",
 			["zoom"] = 0,
@@ -1269,10 +1195,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["id"] = "斩杀",
-			["stickyDuration"] = false,
-			["frameStrata"] = 1,
-			["desaturate"] = false,
 			["trigger"] = {
 				["type"] = "status",
 				["subeventSuffix"] = "_CAST_START",
@@ -1289,6 +1211,10 @@ WeakAurasSaved = {
 				["spellName"] = "斩杀",
 				["custom_hide"] = "timed",
 			},
+			["width"] = 47.33342361450195,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["id"] = "斩杀",
 			["font"] = "Friz Quadrata TT",
 			["numTriggers"] = 1,
 			["xOffset"] = 9.4442138671875,
@@ -1302,15 +1228,228 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
+		["狂暴姿态"] = {
+			["xOffset"] = 8.888671875,
+			["yOffset"] = -79.4443359375,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "update",
+			["icon"] = true,
+			["fontFlags"] = "OUTLINE",
+			["selfPoint"] = "CENTER",
+			["trigger"] = {
+				["type"] = "status",
+				["use_health"] = false,
+				["unevent"] = "auto",
+				["percentpower_operator"] = "<=",
+				["percentpower"] = "20",
+				["event"] = "Power",
+				["subeventPrefix"] = "SPELL",
+				["subeventSuffix"] = "_CAST_START",
+				["powertype"] = 1,
+				["use_percentpower"] = true,
+				["names"] = {
+				},
+				["unit"] = "player",
+				["use_unit"] = true,
+				["use_powertype"] = true,
+				["debuffType"] = "HELPFUL",
+			},
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["height"] = 45.11110305786133,
+			["load"] = {
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 12,
+			["displayStacks"] = "%s",
+			["regionType"] = "icon",
+			["parent"] = "单体输出技能",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["stacksContainment"] = "INSIDE",
+			["zoom"] = 0,
+			["auto"] = false,
+			["additional_triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "status",
+						["unevent"] = "auto",
+						["form"] = 3,
+						["event"] = "Stance/Form/Aura",
+						["subeventPrefix"] = "SPELL",
+						["custom_hide"] = "timed",
+						["use_inverse"] = true,
+						["use_form"] = true,
+						["unit"] = "player",
+						["names"] = {
+						},
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+						["form"] = 3,
+					},
+				}, -- [1]
+			},
+			["id"] = "狂暴姿态",
+			["untrigger"] = {
+				["unit"] = "player",
+			},
+			["frameStrata"] = 1,
+			["width"] = 47.33336639404297,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = true,
+					["do_custom"] = false,
+					["glow_frame"] = "ElvUI_StanceBarButton3",
+				},
+				["finish"] = {
+				},
+			},
+			["inverse"] = false,
+			["numTriggers"] = 2,
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["stickyDuration"] = false,
+			["displayIcon"] = "Interface\\Icons\\Ability_Racial_Avatar",
+			["stacksPoint"] = "BOTTOMRIGHT",
+			["textColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+		},
+		["单体输出技能"] = {
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["controlledChildren"] = {
+				"战斗姿态", -- [1]
+				"狂暴姿态", -- [2]
+				"泄怒", -- [3]
+				"英勇打击", -- [4]
+				"旋风斩", -- [5]
+				"致死打击", -- [6]
+				"压制", -- [7]
+				"斩杀", -- [8]
+				"战斗怒吼", -- [9]
+				"拳击", -- [10]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = -7.7779541015625,
+			["border"] = false,
+			["yOffset"] = 155.5554809570313,
+			["anchorPoint"] = "CENTER",
+			["borderSize"] = 16,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
+			["trigger"] = {
+				["unit"] = "player",
+				["type"] = "aura",
+				["debuffType"] = "HELPFUL",
+				["names"] = {
+				},
+			},
+			["frameStrata"] = 1,
+			["regionType"] = "group",
+			["untrigger"] = {
+			},
+			["borderInset"] = 11,
+			["numTriggers"] = 1,
+			["id"] = "单体输出技能",
+			["borderEdge"] = "None",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["load"] = {
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["expanded"] = true,
+		},
 	},
 	["registered"] = {
 	},
 	["login_squelch_time"] = 10,
 	["frame"] = {
-		["xOffset"] = -108.8900146484375,
-		["yOffset"] = -442.3329467773438,
+		["xOffset"] = -235.0018310546875,
+		["yOffset"] = -390.1107788085938,
 		["height"] = 492,
-		["width"] = 630.0001220703125,
+		["width"] = 630.000244140625,
 	},
 	["tempIconCache"] = {
 		["战斗怒吼"] = "Interface\\Icons\\Ability_Warrior_BattleShout",
